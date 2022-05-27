@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie App</title>
+    <style>
+        body{
+            width:100%;
+            margin:0px;
+            
+        }
+        #main{
+            display:flex;
+            position:fixed;
+            width:100%;
+            height:50px;
+            border:1px solid black;
+            border-radius:10px;
+            justify-content:space-around;
+            align-items:center;
+            background-color: red ;
+            margin-top:1px;
+        }
+
+        #container{
+            display:grid;
+            grid-template-columns: repeat(2,1fr);
+            gap:15px;
+            width:80%;
+            margin:auto;
+            justify-content:center;
+            text-align:center;
+            /* background-color:red; */
+            /* margin-top:30px; */
+            
+        }
+        #box1{
+           margin-top:80px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+        #btn{
+            border-radius:10px;
+            width:100px;
+            background-color:black;
+            color:white;
+            /* padding:5px 10px 5px 10px; */
+            /* height:auto; */
+        }
+        #btn:hover{
+            background-color:red;
+            
+        }
+        h2:hover{
+            cursor:pointer;
+            color:white;
+        }
+
+        #mov{
+          border-radius:10px;
+          width:200px;
+      }
+
+      /* #error{
+          width:50%;
+          height:500px;
+          display:flex;
+          justify-content:center;
+          align-items:center;
+
+      } */
+
+
+
+    </style>
+</head>
+<body>
+    
+<div id="main">
+    <div>
+        <input type="text" name="" id="mov" placeholder="Enter movie name">
+    <button id="btn">Search Movie</button>
+    </div>
+
+    <div>
+        <h2>Search Movies</h2>
+    </div>
+</div>
+
+
+<div id="error"></div>
+<div id="container"></div>
+</body>
+</html>
+
+<script src="index.js"></script>
